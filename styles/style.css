@@ -27,6 +27,7 @@ h1, h2 {
 }
 
 .answer-container {
+    min-width: fit-content;
     padding: 3px 10px;
     margin: 10px 0;
     display: flex;
