@@ -4,10 +4,12 @@ window.onload = () => {
   //  often this will be rendering state to the UI
 
 
-  // log the initial state
+  showQuestion();
+
+  /* log the initial state
   log.push({
     state: deepClone(state)
   });
-  // this log will always
-  console.log(log);
+   this log will always
+  console.log(log);*/
 };
