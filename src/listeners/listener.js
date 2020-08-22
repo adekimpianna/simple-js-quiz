@@ -1,7 +1,15 @@
 'use strict';
 console.log('--- loading listener: listener');
+debugger;
 
+let answerOptions = Array.from(document.querySelectorAll('.answ-text'));
+  console.log('answer options listener:', answerOptions);
 
+  answerOptions.forEach(answerOption => {
+    answerOption.addEventListener('click', selectAnswer);
+    console.log('I click this!')
+    
+  });
 
 /*
 document.getElementById('_')
