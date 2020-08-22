@@ -41,16 +41,31 @@ function showQuestion() {
 
 };
 
+console.log('--- loading handler: selectAnswer');
 
-function selectAnswer (e) {
-  let options = Array.from(document.getElementsByClassName('answ-text'));
+function selectAnswerHandler (e) {
+  /*const logEntry = {
+    action: 'select answer'
+  };
+  appLog.push(logEntry);
+*/
   
+  if (!acceptingAnswers) return;
+
   acceptingAnswers = false;
-  options.forEach(option => {
-    const selectedOption = e.target;
-    const selectedAnswer = selectedOption.dataset['number'];
-  });
-  
+  let options = Array.from(document.getElementsByClassName('answ-text'));
+  const selectedOption = e.target; //
+    //console.log('selectedopt:', selectedOption);
+  const selectedAnswer = selectedOption.dataset['number'];
+    //console.log('selectedansw:', selectedAnswer); 
+  if (selectedAnswer == shuffledForCurrentQuestion.answer) {
+    alert(`correct!`);
+    console.log('answer is:', selectedAnswer == shuffledForCurrentQuestion.answer);
+  } else {
+    alert(`ups, that's wrong!`);
+    console.log('answer is:', selectedAnswer == shuffledForCurrentQuestion.answer);
+  }
+
   showQuestion();
 };
 

@@ -11,19 +11,18 @@
 
 */
 
-console.log('--- loading view: _');
+console.log('--- loading view: view');
 
-// either expect or assert, up to you
+/* either expect or assert, up to you
 const _ = chai._;
 
 
-/**
+
  *
- */
+ 
 const _ = () => {
 
 };
-
 
 // write only one top-level describe in this file
 describe('_', () => {

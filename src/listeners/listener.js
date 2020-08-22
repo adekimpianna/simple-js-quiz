@@ -1,13 +1,13 @@
 'use strict';
-console.log('--- loading listener: listener');
+console.log('--- loading listener: answerOptions');
 debugger;
 
 let answerOptions = Array.from(document.querySelectorAll('.answ-text'));
-  console.log('answer options listener:', answerOptions);
+  //console.log('answer options listener:', answerOptions);
 
   answerOptions.forEach(answerOption => {
-    answerOption.addEventListener('click', selectAnswer);
-    console.log('I click this!')
+    answerOption.addEventListener('click', selectAnswerHandler);
+    //console.log('I click this!')
     
   });
 
