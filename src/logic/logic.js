@@ -1,13 +1,13 @@
 'use strict';
 console.log('--- loading logic: _');
 
-// either expect or assert, up to you
+/* either expect or assert, up to you
 const _ = chai._;
-
+*/
 
 /**
  *
- */
+
 const _ = () => {
 
 };
@@ -24,7 +24,7 @@ describe('_', () => {
   });
 });
 
-/* logic functions are pure functions
+>>>>>>>>. logic functions are pure functions
 
   NEVER read from the DOM
   NEVER write to the DOM

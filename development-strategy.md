@@ -46,7 +46,7 @@ The user can see many questions and many answers
 Steps:
 - Create a new branch from the master branch, named `see-questions`
 - Add a list of questions (and answers) on `data.js`
-- Add a function to randomly show the questions on `logic.js` 
+- Add a function to randomly show the questions on `logic.js` or `handler.js` ?
 - Open PR from the branch o the master branch
 
 
